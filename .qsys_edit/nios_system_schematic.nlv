@@ -1,0 +1,93 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst nios_system.Interval_Timer -pg 1 -lvl 5 -y 1680
+preplace inst nios_system.Audio_Subsystem.Sys_Clk -pg 1
+preplace inst nios_system.Audio_Subsystem.Audio -pg 1
+preplace inst nios_system.SysID -pg 1 -lvl 4 -y 1540
+preplace inst nios_system.PS2_Port -pg 1 -lvl 5 -y 1080
+preplace inst nios_system.HEX7_HEX4 -pg 1 -lvl 4 -y 630
+preplace inst nios_system.HEX3_HEX0 -pg 1 -lvl 4 -y 510
+preplace inst nios_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Sys_Clk -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Onchip_SRAM -pg 1
+preplace inst nios_system.VGA_Subsystem -pg 1 -lvl 2 -y 1640
+preplace inst nios_system.USB -pg 1 -lvl 5 -y 2000
+preplace inst nios_system.Serial_Port -pg 1 -lvl 5 -y 1440
+preplace inst nios_system.Audio_Subsystem.Audio_PLL.audio_pll -pg 1
+preplace inst nios_system.Audio_Subsystem -pg 1 -lvl 5 -y 350
+preplace inst nios_system.Green_LEDs -pg 1 -lvl 4 -y 410
+preplace inst nios_system.Flash -pg 1 -lvl 4 -y 230
+preplace inst nios_system.VGA_Subsystem.VGA_Pixel_RGB_Resampler -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_Scaler -pg 1
+preplace inst nios_system.Slider_Switches -pg 1 -lvl 4 -y 1400
+preplace inst nios_system.Nios2.cpu -pg 1
+preplace inst nios_system.Nios2.reset_bridge -pg 1
+preplace inst nios_system.Nios2.clock_bridge -pg 1
+preplace inst nios_system.AV_Config -pg 1 -lvl 4 -y 30
+preplace inst nios_system.VGA_Subsystem.VGA_Pixel_Scaler -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_Pixel_FIFO -pg 1
+preplace inst nios_system.System_PLL.reset_from_locked -pg 1
+preplace inst nios_system.SD_Card -pg 1 -lvl 4 -y 1140
+preplace inst nios_system.VGA_Subsystem.Sys_Clk -pg 1
+preplace inst nios_system.PS2_Port_Dual -pg 1 -lvl 5 -y 1200
+preplace inst nios_system.Char_LCD_16x2 -pg 1 -lvl 4 -y 130
+preplace inst nios_system.System_PLL.sys_pll -pg 1
+preplace inst nios_system.System_PLL -pg 1 -lvl 1 -y 1840
+preplace inst nios_system.SRAM -pg 1 -lvl 4 -y 1670
+preplace inst nios_system.SDRAM -pg 1 -lvl 4 -y 1000
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Set_Black_Transparent -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem -pg 1
+preplace inst nios_system.JTAG_UART -pg 1 -lvl 5 -y 1780
+preplace inst nios_system.Expansion_JP5 -pg 1 -lvl 5 -y 530
+preplace inst nios_system.Audio_Subsystem.Audio_PLL -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_PLL.reset_from_locked -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_PLL.video_pll -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_PLL -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_Dual_Clock_FIFO -pg 1
+preplace inst nios_system.VGA_Subsystem.VGA_Alpha_Blender -pg 1
+preplace inst nios_system.Pushbuttons -pg 1 -lvl 5 -y 1320
+preplace inst nios_system.Nios2_Floating_Point -pg 1 -lvl 5 -y 760
+preplace inst nios_system.VGA_Subsystem.VGA_Controller -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_RGB_Resampler -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.ASCII_to_Image -pg 1
+preplace inst nios_system.Red_LEDs -pg 1 -lvl 4 -y 900
+preplace inst nios_system.Nios2 -pg 1 -lvl 4 -y 760
+preplace inst nios_system.VGA_Subsystem.VGA_Pixel_DMA -pg 1
+preplace inst nios_system.VGA_Subsystem.Char_Buf_Subsystem.Char_Buf_DMA -pg 1
+preplace inst nios_system.IrDA -pg 1 -lvl 5 -y 960
+preplace inst nios_system.Audio_Subsystem.Audio_PLL.reset_from_locked -pg 1
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.ps2_port,(SLAVE)PS2_Port.external_interface) 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.usb,(SLAVE)USB.external_interface) 1 0 5 NJ 2090 NJ 2090 NJ 2050 NJ 2050 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Green_LEDs.external_interface,(SLAVE)nios_system.green_leds) 1 0 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Audio_Subsystem.audio_pll_ref_reset,(SLAVE)nios_system.audio_pll_ref_reset) 1 0 5 NJ 400 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Char_LCD_16x2.external_interface,(SLAVE)nios_system.char_lcd) 1 0 4 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.vga,(SLAVE)VGA_Subsystem.vga) 1 0 2 NJ 1750 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)System_PLL.ref_reset,(SLAVE)nios_system.system_pll_ref_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)System_PLL.ref_clk,(SLAVE)nios_system.system_pll_ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.serial_port,(SLAVE)Serial_Port.external_interface) 1 0 5 NJ 1390 NJ 1390 NJ 1390 NJ 1390 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sd_card,(SLAVE)SD_Card.conduit_end) 1 0 4 NJ 1190 NJ 1190 NJ 1190 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)VGA_Subsystem.vga_pll_ref_reset,(SLAVE)nios_system.vga_pll_ref_reset) 1 0 2 NJ 1800 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.expansion_jp5,(SLAVE)Expansion_JP5.external_interface) 1 0 5 NJ 620 NJ 620 NJ 620 NJ 620 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Audio_Subsystem.audio,(SLAVE)nios_system.audio) 1 0 5 NJ 360 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.pushbuttons,(SLAVE)Pushbuttons.external_interface) 1 0 5 NJ 1370 NJ 1370 NJ 1370 NJ 1370 NJ
+preplace netloc INTERCONNECT<net_container>nios_system</net_container>(SLAVE)IrDA.reset,(SLAVE)SysID.reset,(SLAVE)Serial_Port.reset,(SLAVE)VGA_Subsystem.sys_reset,(SLAVE)Expansion_JP5.reset,(SLAVE)SD_Card.reset,(SLAVE)USB.reset,(SLAVE)Audio_Subsystem.sys_reset,(MASTER)Nios2.debug_reset_request,(SLAVE)Nios2.reset,(SLAVE)PS2_Port_Dual.reset,(SLAVE)Red_LEDs.reset,(SLAVE)Interval_Timer.reset,(MASTER)System_PLL.reset_source,(SLAVE)Pushbuttons.reset,(SLAVE)SDRAM.reset,(SLAVE)JTAG_UART.reset,(SLAVE)SRAM.reset,(SLAVE)HEX3_HEX0.reset,(SLAVE)AV_Config.reset,(SLAVE)Slider_Switches.reset,(SLAVE)HEX7_HEX4.reset,(SLAVE)PS2_Port.reset,(SLAVE)Green_LEDs.reset,(SLAVE)Char_LCD_16x2.reset,(SLAVE)Flash.reset) 1 1 4 430 1840 NJ 1840 1060 1800 1700
+preplace netloc EXPORT<net_container>nios_system</net_container>(MASTER)Audio_Subsystem.audio_clk,(MASTER)nios_system.audio_clk) 1 5 1 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.irda,(SLAVE)IrDA.external_interface) 1 0 5 NJ 1110 NJ 1110 NJ 1110 NJ 1110 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Flash.conduit_end,(SLAVE)nios_system.flash) 1 0 4 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)SD_Card.clk,(SLAVE)Slider_Switches.clk,(SLAVE)Serial_Port.clk,(SLAVE)HEX7_HEX4.clk,(SLAVE)Red_LEDs.clk,(MASTER)System_PLL.sys_clk,(SLAVE)SDRAM.clk,(SLAVE)Char_LCD_16x2.clk,(SLAVE)Pushbuttons.clk,(SLAVE)AV_Config.clk,(SLAVE)Flash.clk,(SLAVE)HEX3_HEX0.clk,(SLAVE)Green_LEDs.clk,(SLAVE)PS2_Port_Dual.clk,(SLAVE)VGA_Subsystem.sys_clk,(SLAVE)Interval_Timer.clk,(SLAVE)Nios2.clk,(SLAVE)IrDA.clk,(SLAVE)SRAM.clk,(SLAVE)SysID.clk,(SLAVE)USB.clk,(SLAVE)Expansion_JP5.clk,(SLAVE)JTAG_UART.clk,(SLAVE)Audio_Subsystem.sys_clk,(SLAVE)PS2_Port.clk) 1 1 4 410 1450 NJ 1700 1080 1780 1720
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sram,(SLAVE)SRAM.external_interface) 1 0 4 NJ 1470 NJ 1470 NJ 1720 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)PS2_Port.interrupt,(SLAVE)PS2_Port_Dual.interrupt,(SLAVE)Pushbuttons.interrupt,(SLAVE)USB.interrupt,(SLAVE)Audio_Subsystem.audio_irq,(SLAVE)Expansion_JP5.interrupt,(SLAVE)Interval_Timer.irq,(SLAVE)IrDA.interrupt,(SLAVE)JTAG_UART.irq,(SLAVE)Serial_Port.interrupt,(MASTER)Nios2.irq) 1 4 1 1760
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)PS2_Port_Dual.external_interface,(SLAVE)nios_system.ps2_port_dual) 1 0 5 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)HEX3_HEX0.external_interface,(SLAVE)nios_system.hex3_hex0) 1 0 4 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.vga_pll_ref_clk,(SLAVE)VGA_Subsystem.vga_pll_ref_clk) 1 0 2 NJ 1770 NJ
+preplace netloc POINT_TO_POINT<net_container>nios_system</net_container>(SLAVE)Nios2_Floating_Point.s1,(MASTER)Nios2.custom_instruction_master) 1 4 1 N
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)Red_LEDs.external_interface,(SLAVE)nios_system.red_leds) 1 0 4 NJ 950 NJ 950 NJ 950 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.hex7_hex4,(SLAVE)HEX7_HEX4.external_interface) 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(MASTER)nios_system.sdram_clk,(MASTER)System_PLL.sdram_clk) 1 1 5 NJ 2070 NJ 1930 NJ 1930 NJ 1930 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.av_config,(SLAVE)AV_Config.external_interface) 1 0 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sdram,(SLAVE)SDRAM.wire) 1 0 4 NJ 1070 NJ 1070 NJ 1070 NJ
+preplace netloc INTERCONNECT<net_container>nios_system</net_container>(MASTER)Nios2.data_master,(SLAVE)Nios2.debug_mem_slave,(SLAVE)Serial_Port.avalon_rs232_slave,(SLAVE)SysID.control_slave,(SLAVE)Slider_Switches.avalon_parallel_port_slave,(SLAVE)Flash.flash_erase_control,(SLAVE)VGA_Subsystem.pixel_dma_control_slave,(SLAVE)Pushbuttons.avalon_parallel_port_slave,(SLAVE)Audio_Subsystem.audio_slave,(SLAVE)PS2_Port.avalon_ps2_slave,(MASTER)Nios2.instruction_master,(SLAVE)SDRAM.s1,(SLAVE)Expansion_JP5.avalon_parallel_port_slave,(SLAVE)Interval_Timer.s1,(SLAVE)VGA_Subsystem.char_buffer_slave,(SLAVE)USB.avalon_usb_slave,(SLAVE)Red_LEDs.avalon_parallel_port_slave,(SLAVE)AV_Config.avalon_av_config_slave,(SLAVE)PS2_Port_Dual.avalon_ps2_slave,(SLAVE)HEX3_HEX0.avalon_parallel_port_slave,(MASTER)VGA_Subsystem.pixel_dma_master,(SLAVE)IrDA.avalon_irda_slave,(SLAVE)VGA_Subsystem.char_buffer_control_slave,(SLAVE)SD_Card.avalon_sdcard_slave,(SLAVE)Flash.flash_data,(SLAVE)Char_LCD_16x2.avalon_lcd_slave,(SLAVE)Green_LEDs.avalon_parallel_port_slave,(SLAVE)SRAM.avalon_sram_slave,(SLAVE)JTAG_UART.avalon_jtag_slave,(SLAVE)HEX7_HEX4.avalon_parallel_port_slave) 1 1 4 450 1430 830 1680 1040 1820 1740
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.audio_pll_ref_clk,(SLAVE)Audio_Subsystem.audio_pll_ref_clk) 1 0 5 NJ 380 NJ 380 NJ 380 NJ 380 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.slider_switches,(SLAVE)Slider_Switches.external_interface) 1 0 4 NJ 1410 NJ 1410 NJ 1450 NJ
+levelinfo -pg 1 0 140 2240
+levelinfo -hier nios_system 150 230 650 1020 1440 1960 2150

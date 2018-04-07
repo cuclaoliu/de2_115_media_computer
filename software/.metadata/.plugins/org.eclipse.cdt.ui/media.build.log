@@ -1,0 +1,18 @@
+19:09:10 **** Incremental Build of configuration Nios II for project media ****
+make all 
+Info: Building ../media_bsp/
+C:/intelFPGA/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../media_bsp/
+[BSP build complete]
+Info: Compiling media.c to obj/default/media.o
+nios2-elf-gcc -xc -MP -MMD -c -I../media_bsp//HAL/inc -I../media_bsp/ -I../media_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o obj/default/media.o media.c
+Info: Linking media.elf
+nios2-elf-g++  -T'../media_bsp//linker.x' -msys-crt0='../media_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../media_bsp/  -mcustom-fpu-cfg=60-2  -Wl,-Map=media.map   -O0 -g -Wall   -mhw-div -mcustom-fpu-cfg=60-2 -mhw-mul -mhw-mulx -mgpopt=global  -o media.elf obj/default/media.o -lm -msys-lib=m
+nios2-elf-insert media.elf --thread_model hal --cpu_name Nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x10002020 --timestamp 1522999489 --stderr_dev JTAG_UART --stdin_dev JTAG_UART --stdout_dev JTAG_UART --sopc_system_name nios_system --quartus_project_dir "D:/soc/de2_115_media_computer" --jdi D:/soc/de2_115_media_computer/software/media_bsp/../../de2_115_media_computer.jdi --sopcinfo D:/soc/de2_115_media_computer/software/media_bsp/../../nios_system.sopcinfo
+Info: (media.elf) 23 KBytes program size (code + initialized data).
+Info:             131042 KBytes free for stack + heap.
+Info: Creating media.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source media.elf >media.objdump
+[media build complete]
+
+19:09:20 Build Finished (took 9s.682ms)
+
